@@ -8,16 +8,11 @@
         <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Oxygen|Slabo+27px">
-        <link rel="stylesheet/less" type="text/css" href="style/main.less">
+        <link rel="stylesheet/less" href="style/main.less">
     </head>
     <body>
         <header>
-            <div>
-                <a href="index.html">
-                    <span class="header-name">Freddy's Auto</span>
-                </a>
-            </div>
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
@@ -26,7 +21,8 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                    </div>
+                        <a class="navbar-brand" href="index.html">Freddy's Auto</a>
+                    </div><!-- /.navbar-header -->
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
@@ -34,15 +30,39 @@
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
-                    </div>
-                </div>
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
             </nav>
         </header>
-        <!-- JavaScript files START -->
+        <section>
+            <video controls autoplay width="100%">
+                <source src="media/commercial.mp4" />
+            </video>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque sem lectus, a ornare mi efficitur non. Integer hendrerit metus id sodales dictum. Vestibulum quis luctus arcu, vitae condimentum mauris. Ut congue tortor ac massa auctor varius. Quisque bibendum risus quis imperdiet aliquam. In accumsan, lectus a mollis consectetur, ligula libero auctor ante, ac sodales eros massa id dui. Pellentesque facilisis tellus sit amet nisl tincidunt, non accumsan lectus tristique. Aliquam erat volutpat. Morbi eget justo ac nisi vestibulum sodales. Vestibulum luctus venenatis gravida. Nulla quis porta erat, non egestas massa.
+
+                Quisque tincidunt id lorem et ornare. Proin imperdiet quis purus ac venenatis. Vivamus hendrerit erat a felis pulvinar, quis feugiat libero dignissim. Morbi tortor lectus, sollicitudin at consectetur ac, luctus at leo. Morbi scelerisque tristique justo, non tincidunt diam dictum sit amet. Vivamus posuere purus sit amet vestibulum elementum. Fusce vehicula pellentesque condimentum. Phasellus ac ultricies justo, at ultricies magna. Praesent quis vehicula sapien, eget laoreet eros. Curabitur ultrices aliquet lectus, et cursus est accumsan id. Pellentesque et ipsum neque. Praesent maximus leo sit amet tortor feugiat, at suscipit ligula rhoncus. Nam vehicula varius pretium. Nulla nec lacus urna.
+                
+                Donec ultricies leo ultricies felis posuere fermentum. Vivamus at auctor nibh. Vestibulum tempor sapien quis eleifend porttitor. Aliquam pellentesque ac nisl et ultrices. Aenean sit amet elit in lorem blandit sollicitudin non eget nunc. Quisque at sapien tempus, rhoncus eros ut, dictum lorem. Ut luctus at purus sed efficitur.
+                
+                Duis egestas mollis augue, a hendrerit ligula. Phasellus aliquet risus sed leo rhoncus, quis hendrerit eros laoreet. Aenean et sapien eros. Morbi commodo convallis suscipit. Nunc quis velit vulputate, semper ligula hendrerit, efficitur augue. Nullam luctus nisl non fermentum accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec id ligula sem. Curabitur tincidunt metus vitae ligula semper, quis cursus purus cursus. Nullam tempor finibus massa sed congue. Curabitur non accumsan nisl, ac imperdiet leo. Vestibulum tristique laoreet laoreet. Curabitur aliquam velit est, in condimentum turpis tincidunt ac. Quisque eget volutpat odio. Nam egestas placerat ipsum, non porta eros sollicitudin a.
+                
+                Morbi sapien odio, ultricies ultrices massa sit amet, tempor rutrum tortor. Duis aliquet ultricies lorem. Mauris ut augue vel quam pharetra sagittis. Vivamus consequat, erat sed luctus fringilla, urna eros laoreet enim, non bibendum arcu velit nec quam. In nec lectus tempor, congue dui non, cursus mi. Sed non fringilla eros. Ut aliquet magna felis, sit amet rutrum elit tempor sodales. Quisque dignissim libero vitae mollis iaculis. Cras ut magna faucibus, dapibus ante vel, dictum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum finibus sem et lorem semper accumsan.
+            </p>
+        </section>
+        <footer>
+            
+        </footer>
+        <!-- JavaScript files -->
         <script src="bower_components/less/dist/less.min.js" type="text/javascript"></script>
         <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/script.js" type="text/javascript"></script>
-        <!-- JavaScript files END -->
+        <!-- /JavaScript files -->
     </body>
 </html>
