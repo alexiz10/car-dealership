@@ -13,6 +13,7 @@ section {
 footer {
     height: 120px;
     background-color: #212121;
+    clear: both;
 }
 .car-container {
     border: 1px solid grey;
@@ -27,11 +28,19 @@ footer {
         font-size: 1.5em;
     }
 }
+#carousel {
+    margin-bottom: 50px;
+    font-family: 'Lobster', cursive;
+}
 @media only screen and (min-width: 768px) {
     section {
         #placeholder-text {
             column-count: 2;
         }
+    }
+    #carousel {
+        width: 80%;
+        margin: 50px auto;
     }
 }
 @media only screen and (min-width: 960px) {
@@ -39,5 +48,8 @@ footer {
         #placeholder-text {
             column-count: 3;
         }
+    }
+    #carousel {
+        width: 70%;
     }
 }
