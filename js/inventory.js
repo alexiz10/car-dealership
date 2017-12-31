@@ -67,4 +67,14 @@ $(document).ready(function() {
             "<span class=\"car-price\">" + list[i].price + "</span></div></div>"
         );
     }
+    $("#car-search").keyup(function() {
+        var text = $(this).val();
+
+        $('.car-make').parent().parent().hide();
+        $('.car-make').each(function() {
+            if ($(this).text().toLowerCase().indexOf("" + text.toLowerCase() + "") != -1) {
+                $(this).parent().parent().show();
+            }
+        })
+    })
 });
