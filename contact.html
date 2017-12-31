@@ -40,7 +40,28 @@
             </nav>
         </header>
         <section>
-            
+            <form id="contactForm">
+                <fieldset>
+                    <div>
+                        <legend>Enter your Contact info below:</legend>
+                        <p>
+                            <label for="name">Name:</label><input type="text" name="name" id="name">
+                        </p>
+                        <p>
+                            <label for="email">Email:</label><input type="email" name="email" id="email">
+                        </p>
+                        <p>
+                            <label for="phone">Phone:</label><input type="number" name="phone" id="phone">
+                        </p>
+                        <p><label for="msg">Message:</label><br>
+                            <textarea name="msg" id="your-message" cols="50" rows="10" maxlength="500"></textarea>
+                        </p>
+                    </div>
+                </fieldset>
+                <p>
+                    <button class="btnsubmit">Send</button>
+                </p>
+            </form>
         </section>
         <footer>
             
