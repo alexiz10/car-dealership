@@ -1,0 +1,23 @@
+{
+  "name": "car-dealership",
+  "homepage": "https://github.com/alexiz10/car-dealership",
+  "authors": [
+    "Alexiz Hernandez <alexiz_hernandez@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "less": "^2.7.3",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "normalize-css": "^7.0.0"
+  }
+}
