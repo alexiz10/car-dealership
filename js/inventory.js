@@ -4,56 +4,67 @@ $(document).ready(function() {
             "year": 2007,
             "make": "Ford",
             "model": "Mustang",
-            "color": "Red",
-            "milage": 124233,
+            "color": "Silver",
+            "milage": "124,233",
             "engine": "5.0L",
             "transmission": "Manual",
-            "photo_url": "http://strongauto.net/wp-content/uploads/images/2007-Ford-Mustang_12038.jpg",
-            "price": 5999
+            "photo_url": "http://kennebell.net/wp-content/uploads/2017/09/01-ford-mustang-2007-gt-kenne-bell-Press-1200-600-1024x512.jpg",
+            "price": "$5,999"
         },
         {
             "year": 2005,
             "make": "Toyota",
             "model": "Corolla",
             "color": "Silver",
-            "milage": 184829,
+            "milage": "184,829",
             "engine": "1.8L",
             "transmission": "Automatic",
-            "photo_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/2005_Toyota_Corolla_%28ZZE120%29_sedan_01.jpg",
-            "price": 4500
+            "photo_url": "https://i0.wp.com/images01.olx-st.com/ui/54/63/87/44/o_1509559491_0b4a1028dff6b06efaa6caf0b8666bd9.jpg?ssl=1",
+            "price": "$4,500"
         },
         {
             "year": 2015,
             "make": "Dodge",
             "model": "Charger",
-            "color": "Black",
-            "milage": 21043,
+            "color": "White",
+            "milage": "21,043",
             "engine": "5.7L",
             "transmission": "Manual",
-            "photo_url": "https://i.pinimg.com/originals/77/54/a6/7754a65b70e8c53ca7432059da4e89ec.jpg",
-            "price": 28499
+            "photo_url": "https://hips.hearstapps.com/roa.h-cdn.co/assets/15/50/1449863161-dodge-charger-hellcat.jpg",
+            "price": "$28,499"
         },
         {
             "year": 2012,
             "make": "Chevrolet",
             "model": "Camaro",
-            "color": "Red",
-            "milage": 57832,
+            "color": "Grey",
+            "milage": "57,832",
             "engine": "3.6L",
             "transmission": "Automatic",
-            "photo_url": "http://gmauthority.com/blog/wp-content/gallery/2012-chevrolet-camaro-zl1_1/2012-chevrolet-camaro-zl1-1.jpg",
-            "price": 11999
+            "photo_url": "https://images.hgmsites.net/lrg/chevrolet-camaro-zl1-carbon-concept_100368423_l.jpg",
+            "price": "$11,999"
         },
         {
-            "year": 2005,
+            "year": 2007,
             "make": "Honda",
             "model": "Civic",
-            "color": "Silver",
-            "milage": 143288,
+            "color": "Burgundy",
+            "milage": "143,288",
             "engine": "1.7L",
             "transmission": "Automatic",
-            "photo_url": "https://media.ed.edmunds-media.com/honda/civic/2004/oem/2004_honda_civic_sedan_hybrid_s_oem_1_500.jpg",
-            "price": 3599
+            "photo_url": "https://hips.hearstapps.com/roa.h-cdn.co/assets/17/07/1024x512/landscape-1487022045-0-5.jpg?resize=1200:*",
+            "price": "$3,599"
         }
     ];
+    for (let i = 0; i < list.length; i++) {
+        $("#main-section").append(
+            "<div class=\"col-xs-12 col-md-6 col-lg-4\"><div class=\"car-container\">" +
+            "<img class=\"car-image\" src=\"" + list[i].photo_url + "\" />" +
+            "<span class=\"car-make\">" + list[i].year + " " + list[i].make + " " + list[i].model + "</span>" +
+            "<span class=\"car-color\">" + list[i].color + "</span>" +
+            "<span class=\"car-milage\">" + list[i].milage + " miles</span>" +
+            "<span class=\"car-engine\">" + list[i].engine + "/" + list[i].transmission + "</span>" +
+            "<span class=\"car-price\">" + list[i].price + "</span></div></div>"
+        );
+    }
 });
